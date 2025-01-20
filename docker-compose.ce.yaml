@@ -7,7 +7,7 @@ services:
     #      context: .
     #      dockerfile: Dockerfile.ce
     ports:
-      - "${PORT}:${PORT}"
+      - ${PORT}:${PORT}
     volumes:
       - ./zep.yaml:/app/zep.yaml
     environment:
